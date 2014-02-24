@@ -1,1 +1,4 @@
-<li><%= image_tag "https://s3.amazonaws.com/XferMyRun/development/static/homepage/#{apps}_150x.png", size: '100' %></li>
+<li>
+  <%= radio_button_tag type, apps, false, style: 'display:none;' %>
+  <%= label_tag "#{type}_#{apps}", image_tag(app_image_path(apps), size: '100') %>
+</li>
